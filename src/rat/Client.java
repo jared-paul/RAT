@@ -31,7 +31,7 @@ public class Client
         //pluginsEnabled.add(new WiFiPlugin(10000));
         pluginsEnabled.add(new TrackpadPlugin());
 
-        new Thread(new Startup("urgay")).start();
+        new Thread(new Startup("startup")).start();
 
         new Thread(new ClientConnection(this)).start();
     }
